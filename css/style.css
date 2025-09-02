@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+  background-color:#f9fffa ;
+}
+.cartao{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+.info{
+  position: absolute;
+  background-image:url("../img/preto-cimento-superficie-aspera.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  color: white;
+  height: 300px;
+  width: 500px;
+  text-align: center;
+  padding: 25px;
+}
+
+.info .logo{
+  position: absolute; /* absolute permite movimentar pra qualque lugar*/
+  top: 20px;
+  left: 16px;
+  width: 60px;
+  height: auto;
+}
+.info .nome{
+  position: absolute;
+  top: 230px;
+  right: 280px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info .numero-cartao {
+    position: absolute;
+    bottom: 150px;
+    right: 393px;
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.info .numero {
+    position: absolute;
+    bottom: 130px;
+    right: 280px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.info .validade {
+    position: absolute;
+    top: 220px;
+    left: 398px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.info .dtvalidade {
+    position: absolute;
+    top: 200px;
+    left: 403px;
+    font-size: 14px;
+}
+
+.info .titulo {
+    position: absolute;
+    top: 40px;
+    left: 85px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.info .chip {
+    position: absolute;
+    top: 90px;
+    left: 400px;
+    width: 50px;
+    height: auto;
+}
